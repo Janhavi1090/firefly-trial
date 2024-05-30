@@ -17,11 +17,7 @@ body {
 main {
     flex: 1;  /* Allow main to grow and take up available space */
     overflow-y: auto;  /* Enable vertical scrolling if necessary */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    padding-bottom: 100px;
 }
 
 section {
