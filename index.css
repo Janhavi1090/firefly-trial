@@ -1,182 +1,246 @@
-.logo{
-width: 116px;
-height: auto;
-display: block;
-}
-
-.bg1{
-    position: absolute;
-  top: 0px;
-  left: 0px;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
- object-fit: cover;
- z-index: -1;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-nav{
-    position: absolute;
-    z-index: 1;
-    background-color: rgba(28, 28, 28, 0.2);
-    border-bottom: 1px solid rgba(255, 119, 119, 0.4);
-    backdrop-filter: blur(2px);
-    position: absolute;
-    width: 100%;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    
+.logo {
+  width: 116px;
+  height: auto;
+  display: block;
 }
 
-.logo-container{
-    position: absolute;
-    margin: 0 auto;
-    left: 120px;
+nav {
+  z-index: 1;
+  background-color: rgba(28, 28, 28, 0.2);
+  border-bottom: 1px solid rgba(255, 119, 119, 0.4);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
+.logo-container {
+  margin-left: 120px;
+}
 
+.hero--section {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 100px 20px; /* Adjust as needed */
+   /* Adjust background color as needed */
+  box-sizing: border-box;
+}
 
-/* The choice is yours. Because they don’t have one. */
-.title{
-position: absolute;
-width: 574px;
-height: 112px;
-left: 120px;
-top: 243px;
+.red-tint{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0,0.5);
+}
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 56px;
-/* or 127% */
+.bg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
-color: #FFFFFF;
-
+.title {
+  width: 574px;
+  height: 112px;
+  margin-left: 128px;
+  margin-top:100px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 56px;
+  color: #FFFFFF;
+  text-align: left;
 }
 
 .rectangle-container {
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    width: 399px;
-    height: 527px;
-  }
-
-
-  .quick-view {
-    position: relative;
-    font-size: var(--font-size-base);
-    line-height: 36px;
-    font-weight: 600;
-    font-family: var(--font-roboto);
-    color: var(--color-red-200);
-    text-align: left;
-    display: inline-block;
-    min-width: 89px;
-    white-space: nowrap;
-  }
-
-  .quick-view-wrapper {
-    cursor: pointer;
-    border: none;
-    padding: 0px;
-    
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 401px;
-    left: 120px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    width: 211px;
-    height: 52px;
-  }
-  .quick-view-wrapper:hover {
-    background-color: #e6e6e6;
-  }
-
-  .about {
-    margin: 0;
-    position: relative;
-    font-size: inherit;
-    line-height: 44px;
-    font-weight: 600;
-    font-family: inherit;
-    display: inline-block;
-    min-width: 87px;
-  }
-  .about-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: var(--padding-11xs) 0px 0px;
-  }
-
-.about--title1{
-position: absolute;
-width: 87px;
-height: 44px;
-left: 677px;
-top: 601px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-/* identical to box height, or 138% */
-text-align: center;
-color: #F27121;
-
+  position: relative;
+  width: 399px;
+  margin-left: 35px;
+  margin-top: 45px;
 }
 
-.about--title2{
-    /* About */
-
-position: absolute;
-width: 87px;
-height: 44px;
-left: 677px;
-top: 603px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-/* identical to box height, or 138% */
-text-align: center;
-color: #ECE14C;
+.quick-view {
+  font-size: var(--font-size-base);
+  line-height: 36px;
+  font-weight: 600;
+  font-family: var(--font-roboto);
+  color: var(--color-red-200);
+  text-align: left;
+  display: inline-block;
+  min-width: 89px;
+  white-space: nowrap;
 }
 
+.quick-view-wrapper {
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 211px;
+  height: 52px;
+  margin: 20px auto 0; /* Center the button */
+}
+
+.quick-view-wrapper:hover {
+  background-color: #e6e6e6;
+}
+
+.about--section {
+  width: 100%;
+  padding: 0px 0px; /* Adjust padding as needed */
+  background-color: #ffffff; /* Adjust background color as needed */
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title-frame-container {
+  display: flex;
+  margin-top: 50px;
+  height:100px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0px; /* Adjust spacing as needed */
+}
+
+.frame-wrapper {
+  margin: 100px 100px; /* Adjust spacing as needed */
+}
+
+.about--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about--title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #F27121;
+  text-shadow: 0px 3px 0px  #ECE14C;
+}
 /* Our products are crafted exclusively from the dreams and screams of young kids who wanted to show their mastery in their chosen fields, but were directed towards a factory for daily wages. Each cracker bursts brighter than their lost smiles, and can be heard louder than their cries for miles. Buy them, burst them, brag about them. The choice is yours. Because they don’t have one. */
-.about--text{
-position: absolute;
-width: 908px;
-height: 139px;
-left: 285px;
-justify-content: center;
-top: 715px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-size: 16px;
-line-height: 32px;
-text-align: center;
 
-color: #000000;
+
+
+
+
+.about--text {
+  max-width: 700px; /* Adjust as needed for text width */
+  margin-top: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
 }
 
-.text--highlight{
-    font-weight: 200 !important;
-    font-size: 20px;
+.text--highlight {
+  font-weight: 200 !important;
+  font-size: 20px;
 }
 
+.products--section {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #f8f8f8; /* Adjust background color as needed */
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
 
+.products--title1, .products--title2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0;
+}
 
+.products--title1 {
+  color: #F27121;
+}
+
+.products--title2 {
+  color: #ECE14C;
+}
+
+.frame-wrapper2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0px 0px var(--padding-lg);
+  box-sizing: border-box;
+  min-width: 307px;
+  max-width: 100%;
+}
+
+.frame-icon {
+  align-self: stretch;
+  height: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.products--section{
+    width: 100%;
+    padding: 0px 0px; /* Adjust padding as needed */
+    background-color: #ffffff; /* Adjust background color as needed */
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+.products--title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #F27121;
+    text-shadow: 0px 3px 0px  #ECE14C;
+}

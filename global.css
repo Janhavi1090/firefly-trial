@@ -1,0 +1,29 @@
+/* global.css or a similar stylesheet */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensure body takes at least full viewport height */
+}
+
+main {
+    flex: 1;  /* Allow main to grow and take up available space */
+    overflow-y: auto;  /* Enable vertical scrolling if necessary */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    padding: 20px;  /* Example padding */
+}
