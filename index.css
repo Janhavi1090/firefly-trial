@@ -14,7 +14,7 @@ body, html {
 }
 
 nav {
-  z-index: 1;
+  z-index: 1000;
   background-color: rgba(28, 28, 28, 0.2);
   border-bottom: 1px solid rgba(255, 119, 119, 0.4);
   backdrop-filter: blur(2px);
@@ -37,7 +37,6 @@ nav {
   width: 100%;
   text-align: center;
   padding: 100px 20px; /* Adjust as needed */
-   /* Adjust background color as needed */
   box-sizing: border-box;
 }
 
@@ -119,6 +118,7 @@ nav {
   text-align: center;
   box-sizing: border-box;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .title-frame-container {
@@ -152,12 +152,6 @@ nav {
   color: #F27121;
   text-shadow: 0px 3px 0px  #ECE14C;
 }
-/* Our products are crafted exclusively from the dreams and screams of young kids who wanted to show their mastery in their chosen fields, but were directed towards a factory for daily wages. Each cracker bursts brighter than their lost smiles, and can be heard louder than their cries for miles. Buy them, burst them, brag about them. The choice is yours. Because they don’t have one. */
-
-
-
-
-
 
 .about--text {
   max-width: 700px; /* Adjust as needed for text width */
@@ -178,29 +172,24 @@ nav {
 
 .products--section {
   width: 100%;
-  padding: 50px 20px;
-  background-color: #f8f8f8; /* Adjust background color as needed */
+  margin-bottom: 5px;
+  background-color: #ffffff; /* Adjust background color as needed */
   text-align: center;
   box-sizing: border-box;
   position: relative;
 }
 
-.products--title1, .products--title2 {
+.products--title{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 28px; /* Adjust font size if needed */
+
   text-align: center;
-  margin: 0;
-}
-
-.products--title1 {
+  margin-bottom: 5px;
   color: #F27121;
-}
-
-.products--title2 {
-  color: #ECE14C;
+  text-shadow: 0px 3px 0px  #ECE14C;
+  white-space: nowrap; /* Prevent line break */
 }
 
 .frame-wrapper2 {
@@ -209,7 +198,7 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 0px 0px var(--padding-lg);
+
   box-sizing: border-box;
   min-width: 307px;
   max-width: 100%;
@@ -224,27 +213,8 @@ nav {
   object-fit: contain;
 }
 
-.products--section{
-    width: 100%;
-    padding: 0px 0px; /* Adjust padding as needed */
-    background-color: #ffffff; /* Adjust background color as needed */
-    text-align: center;
-    box-sizing: border-box;
-    position: relative;
-    margin-bottom: 100px;
-  }
 
-.products--title{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 44px;
-    text-align: center;
-    margin-bottom: 5px;
-    color: #F27121;
-    text-shadow: 0px 3px 0px  #ECE14C;
-}
+
 .products--container{
   margin-bottom: 20px;
 }
@@ -318,3 +288,79 @@ nav {
   border: 1px solid #cecece;
 }
 
+
+footer {
+  background-color: #25A769;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative; /* Ensure relative positioning for child elements */
+  min-height: 45px; /* Set a minimum height to ensure the footer maintains its height */
+  width: 100%;
+  position: static;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.footer-containergreen {
+  display: flex;
+  justify-content: center; /* Center main content horizontally */
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative; /* Ensure absolute positioning for child elements */
+}
+
+.side-image {
+  width: 60px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.side-image.right {
+  position: absolute;
+  right: 20px; /* Align to the right end */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Correct vertical centering */
+}
+
+.side-image.left {
+  position: absolute;
+  left: 20px; /* Align to the left end */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Correct vertical centering */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
