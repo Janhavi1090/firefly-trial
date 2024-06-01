@@ -36,7 +36,7 @@ nav {
   position: relative;
   width: 100%;
   text-align: center;
-  padding: 100px 20px; /* Adjust as needed */
+  padding: 50px 20px; /* Adjust as needed */
   box-sizing: border-box;
 }
 
@@ -363,4 +363,230 @@ footer {
 
 .social-icons img:hover {
   transform: scale(1.1);
+}
+
+
+/* Media Queries for Mobile Devices */
+
+@media (max-width: 768px) {
+  .logo-container {
+    margin-left: 22px;
+  }
+
+  .title {
+    width: 100%;
+    margin-left: 25px;
+    font-size: 24px;
+    line-height: 56px;
+    text-align: left;
+  }
+
+  .rectangle-container {
+    width: auto;
+    margin-left: 20px;
+  }
+
+  .quick-view-wrapper {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    white-space: nowrap;
+    margin-left: 8px;/* Center the button */
+  }
+
+  .title-frame-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .frame-wrapper {
+    margin: 5px 10px;
+  }
+
+  .about--title {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .about--text {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 20px;
+  }
+
+  .products--title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .products-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .quick-view-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .footer-containergreen {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .side-image {
+    width: 40px; /* Adjust the width as needed */
+  height: auto;
+  }
+
+  .side-image.right {
+    position: absolute;
+    right: 40px; /* Align to the right end */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Correct vertical centering */
+  }
+  
+  .side-image.left {
+    position: absolute;
+    left: 10px; /* Align to the left end */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Correct vertical centering */
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    width: 100%;
+    font-size: 18px;
+    line-height: 56px;
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .rectangle-container{
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .quick-view-wrapper {
+    width: 130px;
+    height: 35px;
+ 
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 2px; /* Center the button */
+  }
+
+  .quick-view-btn {
+    width: 130px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+
+  .title-frame-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .frame-wrapper {
+    margin: 5px;
+  }
+
+  .about--title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .about--text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .products--title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .product-info h3 {
+    font-size: 16px;
+  }
+
+  .product-card {
+    width: 95%;
+  }
+
+  .footer-container p {
+    font-size: 14px;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
 }
